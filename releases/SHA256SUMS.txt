@@ -1,2 +1,2 @@
 12bc8b5f80dadc14badf1df25300ade5653624502152ee25c5bf39473c537a42  Hyperlink-v3.1.0-arm64-v8a.apk
-2ad517072546282676054f10eb52dd260f679dfca597479838f4ac97d7cdb43c  Hyperlink-v3.1.0-source.zip
+439f8aeefbcf9a103b17cba99788eb28b02f760da39d7a7f91a98f7fbb459758  Hyperlink-v3.1.0-source.zip

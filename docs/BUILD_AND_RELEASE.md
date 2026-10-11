@@ -51,7 +51,7 @@ Jika keystore tidak diberikan, workflow menghasilkan APK bertanda debug untuk ev
 
 ## GitHub Actions
 
-Workflow `.github/workflows/android.yml` berjalan pada push/PR ke cabang utama, tag `v*`, atau pemicu manual. Workflow memasang toolchain, menjalankan typecheck/test, membangun satu APK arm64, dan mengunggah artifact. Tag versi dapat menerbitkan GitHub Release dan melampirkan APK.
+Workflow `.github/workflows/android.yml` berjalan pada push/PR ke cabang utama, tag `v*`, atau pemicu manual. Workflow memasang toolchain, menjalankan typecheck/test, membangun satu APK arm64, dan mengunggah artifact. Tag versi yang lulus build menerbitkan GitHub Release berisi APK, source ZIP, dan file SHA-256 yang sama dengan isi repository.
 
 Jangan mengaktifkan workflow dari pull request yang tidak dipercaya setelah menambahkan signing secrets; jangan pernah mencetak isi secret ke log.
 
