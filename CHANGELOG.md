@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.1.1 — Fokus UI & backdrop blur
+
+- Navigasi bawah dibuat lebih transparan agar backdrop blur tampak jelas; transisi tetap ringan.
+- Kartu call terbaru pada Beranda Live dan Demo dimulai dalam keadaan ringkas, dengan kontrol buka/minimalkan.
+- Popover, menu, bottom sheet, dan konfirmasi memburamkan serta meredupkan konten latar; aksi berisiko tetap memerlukan konfirmasi eksplisit.
+- APK Android `arm64-v8a`, minimum API 31, target API 36, package `com.tradepilotnative`, `versionCode` 35.
+
 ## 3.1.0 — DeafDeep & UI refresh
 
 - Template suara DeafDeep menjadi default baru, dengan pemetaan suara UI yang diperbarui.

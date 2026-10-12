@@ -1,6 +1,6 @@
 # Panduan konfigurasi API Hyperlink
 
-Dokumen ini menjelaskan API yang dapat dikonfigurasi di aplikasi Hyperlink 3.1.0. **Tidak perlu menanam API key ke source code, `.env`, atau GitHub.** Masukkan credential melalui menu Setelan di perangkat.
+Dokumen ini menjelaskan API yang dapat dikonfigurasi di aplikasi Hyperlink 3.1.1. **Tidak perlu menanam API key ke source code, `.env`, atau GitHub.** Masukkan credential melalui menu Setelan di perangkat.
 
 > Mulai dengan Demo dan testnet. Jangan memberikan izin penarikan dana pada API key exchange. Jangan membagikan API Secret, passphrase, Telegram API Hash, kode login, password 2FA, atau sesi Telegram.
 

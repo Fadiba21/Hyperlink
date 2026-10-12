@@ -1,4 +1,4 @@
-# Hyperlink 3.1.0
+# Hyperlink 3.1.1
 
 **Hyperlink** adalah aplikasi Android berbasis React Native untuk memantau call futures, menguji strategi lewat paper trading, melihat data pasar/chart, dan—jika dikonfigurasi secara sadar—menghubungkan akun exchange. Fokus awal yang disarankan adalah **Demo/testnet**.
 
@@ -6,8 +6,8 @@
 
 ## Unduhan
 
-- [APK Android v3.1.0 (arm64-v8a)](releases/Hyperlink-v3.1.0-arm64-v8a.apk)
-- [Source code lengkap v3.1.0 (ZIP)](releases/Hyperlink-v3.1.0-source.zip)
+- [APK Android v3.1.1 (arm64-v8a)](releases/Hyperlink-v3.1.1-arm64-v8a.apk)
+- [Source code lengkap v3.1.1 (ZIP)](releases/Hyperlink-v3.1.1-source.zip)
 - [SHA-256 APK dan source ZIP](releases/SHA256SUMS.txt)
 - [Panduan konfigurasi API](docs/API_SETUP.md)
 - [Build dan release](docs/BUILD_AND_RELEASE.md)
@@ -15,7 +15,7 @@
 
 | Detail rilis | Nilai |
 |---|---|
-| Versi | 3.1.0 (versionCode 34) |
+| Versi | 3.1.1 (versionCode 35) |
 | Package Android | `com.tradepilotnative` |
 | Arsitektur APK | `arm64-v8a` saja |
 | Android minimum | API 31 / Android 12 |
@@ -37,6 +37,12 @@ APK ini cocok untuk evaluasi/pemasangan manual. APK bukan rilis Play Store dan b
 Screenshot menunjukkan antarmuka yang dikirim pemilik proyek. Saldo dan posisi Demo adalah data simulasi; dashboard Live pada gambar terakhir belum tersambung ke API exchange.
 
 ## Fitur
+
+### Penyegaran UI v3.1.1
+
+- Navigasi bawah lebih transparan agar backdrop blur terlihat jelas.
+- Kartu call terbaru di Beranda Live dan Demo dimulai dalam keadaan ringkas; pengguna dapat membuka atau meminimalkannya.
+- Popover, menu, bottom sheet, dan konfirmasi meredupkan serta memburamkan latar; aksi berisiko tetap meminta konfirmasi.
 
 ### Pasar, chart, dan sinyal
 
@@ -80,7 +86,7 @@ Android mungkin menampilkan peringatan karena APK dipasang dari luar Play Store.
 
 ## Build dari source
 
-Prasyarat utama: Node.js **22.11+**, JDK **21**, Android SDK platform **36**, Build Tools **36.1.0**, dan NDK **27.1.12297006**. Dari root repository:
+Prasyarat utama: Node.js **22.11+**, JDK **21**, Android SDK platform **36**, Build Tools **36.1.0**, dan NDK **27.1.12297006**. Unduh dan ekstrak ZIP source v3.1.1; jalankan perintah berikut dari folder `xo3` hasil ekstraksi:
 
 ```bash
 npm ci
@@ -95,8 +101,8 @@ APK hasil build berada di `android/app/build/outputs/apk/release/app-release.apk
 
 ## Source dan lisensi
 
-Source mencakup kode JavaScript/TypeScript, konfigurasi Android/iOS, test, aset, dan lockfile; `node_modules`, output build, file environment, serta keystore tidak disertakan. Kode sumber belum memiliki file lisensi. **Jangan menganggap source ini memberi izin penggunaan ulang atau distribusi ulang.** Tinjau lisensi dependency dan aset pihak ketiga di `SOUND_ASSETS.md` sebelum distribusi.
+ZIP source v3.1.1 mencakup kode JavaScript/TypeScript, konfigurasi Android/iOS, test, aset, dan lockfile. `node_modules`, output build, API credentials, dan keystore signing tidak disertakan. Kode sumber belum memiliki file lisensi. **Jangan menganggap source ini memberi izin penggunaan ulang atau distribusi ulang.** Tinjau lisensi dependency dan aset pihak ketiga di `SOUND_ASSETS.md` sebelum distribusi.
 
 ## Status pemeriksaan
 
-Pada paket source lokal v3.1.0: TypeScript typecheck lulus dan **17 test suite / 78 test** lulus. Pemeriksaan ini bukan audit keamanan dan bukan bukti validasi trading pada akun exchange atau perangkat nyata. Sebelum memakai Live, uji alur API di testnet/akun demo exchange dan verifikasi semua parameter order secara manual.
+APK v3.1.1 dibuat sebagai satu task Android release untuk `arm64-v8a`; metadata terverifikasi sebagai package `com.tradepilotnative`, versionCode 35, minimum API 31, dan target API 36. Tanda tangan APK v2 valid, tetapi memakai sertifikat debug Android—**bukan signing produksi**. SHA-256 kedua berkas rilis tercantum di `releases/SHA256SUMS.txt`. Ini bukan audit keamanan atau validasi trading pada akun/perangkat nyata; sebelum memakai Live, uji di testnet/demo dan verifikasi semua parameter order secara manual.
